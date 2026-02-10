@@ -1,0 +1,67 @@
+﻿info: using puyapy version 5.7.1
+warning: cannot determine package root for smart_contracts/campuspay/contract.py
+info: using python search path: ['C:\\Users\\SHREYA\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip', 'C:\\Users\\SHREYA\\AppData\\Local\\Programs\\Python\\Python312\\DLLs', 'C:\\Users\\SHREYA\\AppData\\Local\\Programs\\Python\\Python312', 'E:\\copy of d drive\\Hackspirit\\.ptenv', 'E:\\copy of d drive\\Hackspirit\\.ptenv\\Lib\\site-packages']
+warning: could not determine algopy version
+smart_contracts\campuspay\contract.py:1 error: Module "puyapy" has no attribute "ARC4Contract"  [attr-defined]
+                                                  from puyapy import ARC4Contract, UInt64, arc4, gtxn, op
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:1 error: Module "puyapy" has no attribute "UInt64"  [attr-defined]
+                                                  from puyapy import ARC4Contract, UInt64, arc4, gtxn, op
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:1 error: Module "puyapy" has no attribute "arc4"  [attr-defined]
+                                                  from puyapy import ARC4Contract, UInt64, arc4, gtxn, op
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:1 error: Module "puyapy" has no attribute "gtxn"  [attr-defined]
+                                                  from puyapy import ARC4Contract, UInt64, arc4, gtxn, op
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:1 error: Module "puyapy" has no attribute "op"  [attr-defined]
+                                                  from puyapy import ARC4Contract, UInt64, arc4, gtxn, op
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:4 error: Class cannot subclass "ARC4Contract" (has type "Any")  [misc]
+                                                  class CampusPay(ARC4Contract):
+                                                                  ^~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:4 error: Base type ARC4Contract becomes "Any" due to an unfollowed import  [no-any-unimported]
+                                                  class CampusPay(ARC4Contract):
+                                                                  ^~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:9 error: Untyped decorator makes function "greet" untyped  [untyped-decorator]
+                                                      @arc4.abimethod()
+                                                       ^~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:10 error: Return type becomes "Any" due to an unfollowed import  [no-any-unimported]
+                                                       def greet(self) -> arc4.String:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:10 error: Function is untyped after decorator transformation  [misc]
+                                                       def greet(self) -> arc4.String:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:13 error: Untyped decorator makes function "register_transaction" untyped  [untyped-decorator]
+                                                       @arc4.abimethod()
+                                                        ^~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:14 error: Return type becomes "Any" due to an unfollowed import  [no-any-unimported]
+                                                       def register_transaction(self, amount: UInt64) -> UInt64:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:14 error: Argument 2 to "register_transaction" becomes "Any" due to an unfollowed import  [no-any-unimported]
+                                                       def register_transaction(self, amount: UInt64) -> UInt64:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:14 error: Function is untyped after decorator transformation  [misc]
+                                                       def register_transaction(self, amount: UInt64) -> UInt64:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:19 error: Untyped decorator makes function "get_stats" untyped  [untyped-decorator]
+                                                       @arc4.abimethod()
+                                                        ^~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:20 error: Return type becomes "tuple[Any, Any]" due to an unfollowed import  [no-any-unimported]
+                                                       def get_stats(self) -> tuple[UInt64, UInt64]:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:20 error: Function is untyped after decorator transformation  [misc]
+                                                       def get_stats(self) -> tuple[UInt64, UInt64]:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:23 error: Untyped decorator makes function "pay_and_log" untyped  [untyped-decorator]
+                                                       @arc4.abimethod()
+                                                        ^~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:24 error: Return type becomes "Any" due to an unfollowed import  [no-any-unimported]
+                                                       def pay_and_log(self, payment: gtxn.PaymentTransaction) -> arc4.String:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:24 error: Argument 2 to "pay_and_log" becomes "Any" due to an unfollowed import  [no-any-unimported]
+                                                       def pay_and_log(self, payment: gtxn.PaymentTransaction) -> arc4.String:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smart_contracts\campuspay\contract.py:24 error: Function is untyped after decorator transformation  [misc]
+                                                       def pay_and_log(self, payment: gtxn.PaymentTransaction) -> arc4.String:
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

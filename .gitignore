@@ -1,0 +1,34 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ptenv/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Algorand/Algokit
+.algokit/
+artifacts/
+smart_contracts/*/artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

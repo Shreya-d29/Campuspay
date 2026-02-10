@@ -1,0 +1,1024 @@
+{
+  "version": 3,
+  "sources": [
+    "contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAKQ;AAA0B;AAA1B;AACA;AAAoB;AAApB;AAHR;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;AAAA;AAKK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;;;;;;;;;AAIA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAEG;AAAA;AAAA;AAAA;AAA2B;AAA3B;AAAA;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACO;AAAA;AAAA;AAAA;AAJV;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAQW;AAAA;AAAA;AAAA;AAAyB;AAAA;AAAA;AAAA;AAFpC;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAIA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAGU;;AAAP;AAAA;AAEA;AAAA;AAAA;AAAA;AAA2B;AAA3B;AAAA;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AANH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "algopy.arc4.ARC4Contract.approval_program",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1"
+    },
+    "5": {
+      "op": "bytecblock \"total_transactions\" \"total_volume\" 0x151f7c75"
+    },
+    "44": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "46": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "49": {
+      "op": "bytec_0 // \"total_transactions\"",
+      "defined_out": [
+        "\"total_transactions\""
+      ],
+      "stack_out": [
+        "\"total_transactions\""
+      ]
+    },
+    "50": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"total_transactions\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"total_transactions\"",
+        "0"
+      ]
+    },
+    "51": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "52": {
+      "op": "bytec_1 // \"total_volume\"",
+      "defined_out": [
+        "\"total_volume\""
+      ],
+      "stack_out": [
+        "\"total_volume\""
+      ]
+    },
+    "53": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"total_volume\"",
+        "0"
+      ]
+    },
+    "54": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "55": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "57": {
+      "op": "bz main___algopy_default_create@13",
+      "stack_out": []
+    },
+    "60": {
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "62": {
+      "op": "!",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "63": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "64": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "66": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "67": {
+      "op": "pushbytess 0x3c2ffb7e 0x20760649 0xe67daf51 0x7e4d3961 // method \"greet()string\", method \"register_transaction(uint64)uint64\", method \"get_stats()(uint64,uint64)\", method \"pay_and_log(pay)string\"",
+      "defined_out": [
+        "Method(get_stats()(uint64,uint64))",
+        "Method(greet()string)",
+        "Method(pay_and_log(pay)string)",
+        "Method(register_transaction(uint64)uint64)"
+      ],
+      "stack_out": [
+        "Method(greet()string)",
+        "Method(register_transaction(uint64)uint64)",
+        "Method(get_stats()(uint64,uint64))",
+        "Method(pay_and_log(pay)string)"
+      ]
+    },
+    "89": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(get_stats()(uint64,uint64))",
+        "Method(greet()string)",
+        "Method(pay_and_log(pay)string)",
+        "Method(register_transaction(uint64)uint64)",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "Method(greet()string)",
+        "Method(register_transaction(uint64)uint64)",
+        "Method(get_stats()(uint64,uint64))",
+        "Method(pay_and_log(pay)string)",
+        "tmp%6#0"
+      ]
+    },
+    "92": {
+      "op": "match main_greet_route@6 register_transaction get_stats pay_and_log",
+      "stack_out": []
+    },
+    "102": {
+      "op": "err"
+    },
+    "103": {
+      "block": "main_greet_route@6",
+      "stack_in": [],
+      "op": "pushbytes 0x151f7c75004057656c636f6d6520746f2043616d707573506179202d2054686520536f6369616c2046696e616e636520506c6174666f726d20666f722053747564656e747321",
+      "defined_out": [
+        "0x151f7c75004057656c636f6d6520746f2043616d707573506179202d2054686520536f6369616c2046696e616e636520506c6174666f726d20666f722053747564656e747321"
+      ],
+      "stack_out": [
+        "0x151f7c75004057656c636f6d6520746f2043616d707573506179202d2054686520536f6369616c2046696e616e636520506c6174666f726d20666f722053747564656e747321"
+      ]
+    },
+    "175": {
+      "op": "log",
+      "stack_out": []
+    },
+    "176": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "177": {
+      "op": "return",
+      "stack_out": []
+    },
+    "178": {
+      "block": "main___algopy_default_create@13",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "180": {
+      "op": "!",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "181": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "183": {
+      "op": "!",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "184": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "185": {
+      "op": "return",
+      "defined_out": [],
+      "stack_out": []
+    },
+    "186": {
+      "subroutine": "contract.CampusPay.register_transaction[routing]",
+      "params": {},
+      "block": "register_transaction",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "189": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "190": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0"
+      ]
+    },
+    "191": {
+      "op": "pushint 8",
+      "defined_out": [
+        "8",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "193": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "194": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "195": {
+      "op": "btoi",
+      "defined_out": [
+        "amount#0"
+      ],
+      "stack_out": [
+        "amount#0"
+      ]
+    },
+    "196": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "amount#0"
+      ],
+      "stack_out": [
+        "amount#0",
+        "0"
+      ]
+    },
+    "197": {
+      "op": "bytec_0 // \"total_transactions\"",
+      "defined_out": [
+        "\"total_transactions\"",
+        "0",
+        "amount#0"
+      ],
+      "stack_out": [
+        "amount#0",
+        "0",
+        "\"total_transactions\""
+      ]
+    },
+    "198": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "amount#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "amount#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "199": {
+      "error": "check self.total_transactions exists",
+      "op": "assert // check self.total_transactions exists",
+      "stack_out": [
+        "amount#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "200": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "amount#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "amount#0",
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "201": {
+      "op": "+",
+      "defined_out": [
+        "amount#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "amount#0",
+        "tmp%0#1"
+      ]
+    },
+    "202": {
+      "op": "bytec_0 // \"total_transactions\"",
+      "stack_out": [
+        "amount#0",
+        "tmp%0#1",
+        "\"total_transactions\""
+      ]
+    },
+    "203": {
+      "op": "swap",
+      "stack_out": [
+        "amount#0",
+        "\"total_transactions\"",
+        "tmp%0#1"
+      ]
+    },
+    "204": {
+      "op": "app_global_put",
+      "stack_out": [
+        "amount#0"
+      ]
+    },
+    "205": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "amount#0",
+        "0"
+      ]
+    },
+    "206": {
+      "op": "bytec_1 // \"total_volume\"",
+      "defined_out": [
+        "\"total_volume\"",
+        "0",
+        "amount#0"
+      ],
+      "stack_out": [
+        "amount#0",
+        "0",
+        "\"total_volume\""
+      ]
+    },
+    "207": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "amount#0",
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "amount#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "208": {
+      "error": "check self.total_volume exists",
+      "op": "assert // check self.total_volume exists",
+      "stack_out": [
+        "amount#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "209": {
+      "op": "+",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "210": {
+      "op": "bytec_1 // \"total_volume\"",
+      "stack_out": [
+        "tmp%1#1",
+        "\"total_volume\""
+      ]
+    },
+    "211": {
+      "op": "swap",
+      "stack_out": [
+        "\"total_volume\"",
+        "tmp%1#1"
+      ]
+    },
+    "212": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "213": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "214": {
+      "op": "bytec_0 // \"total_transactions\"",
+      "stack_out": [
+        "0",
+        "\"total_transactions\""
+      ]
+    },
+    "215": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "216": {
+      "error": "check self.total_transactions exists",
+      "op": "assert // check self.total_transactions exists",
+      "stack_out": [
+        "maybe_value%2#0"
+      ]
+    },
+    "217": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "218": {
+      "op": "bytec_2 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "219": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "220": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "221": {
+      "op": "log",
+      "stack_out": []
+    },
+    "222": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "223": {
+      "op": "return",
+      "stack_out": []
+    },
+    "224": {
+      "subroutine": "contract.CampusPay.get_stats[routing]",
+      "params": {},
+      "block": "get_stats",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "225": {
+      "op": "bytec_0 // \"total_transactions\"",
+      "defined_out": [
+        "\"total_transactions\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"total_transactions\""
+      ]
+    },
+    "226": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "227": {
+      "error": "check self.total_transactions exists",
+      "op": "assert // check self.total_transactions exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "228": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "maybe_value%0#0",
+        "0"
+      ]
+    },
+    "229": {
+      "op": "bytec_1 // \"total_volume\"",
+      "defined_out": [
+        "\"total_volume\"",
+        "0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "0",
+        "\"total_volume\""
+      ]
+    },
+    "230": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%0#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "231": {
+      "error": "check self.total_volume exists",
+      "op": "assert // check self.total_volume exists",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "232": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "233": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "234": {
+      "op": "swap",
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "235": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0",
+        "aggregate%val_as_bytes%1#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "aggregate%val_as_bytes%1#0"
+      ]
+    },
+    "236": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%1#0"
+      ],
+      "stack_out": [
+        "aggregate%head%1#0"
+      ]
+    },
+    "237": {
+      "op": "bytec_2 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%head%1#0"
+      ],
+      "stack_out": [
+        "aggregate%head%1#0",
+        "0x151f7c75"
+      ]
+    },
+    "238": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%head%1#0"
+      ]
+    },
+    "239": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "240": {
+      "op": "log",
+      "stack_out": []
+    },
+    "241": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "242": {
+      "op": "return",
+      "stack_out": []
+    },
+    "243": {
+      "subroutine": "contract.CampusPay.pay_and_log[routing]",
+      "params": {},
+      "block": "pay_and_log",
+      "stack_in": [],
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "245": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "1"
+      ]
+    },
+    "246": {
+      "op": "-",
+      "defined_out": [
+        "payment#0"
+      ],
+      "stack_out": [
+        "payment#0"
+      ]
+    },
+    "247": {
+      "op": "dup",
+      "defined_out": [
+        "payment#0",
+        "payment#0 (copy)"
+      ],
+      "stack_out": [
+        "payment#0",
+        "payment#0 (copy)"
+      ]
+    },
+    "248": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_type%0#0",
+        "payment#0"
+      ],
+      "stack_out": [
+        "payment#0",
+        "gtxn_type%0#0"
+      ]
+    },
+    "250": {
+      "op": "intc_1 // pay",
+      "defined_out": [
+        "gtxn_type%0#0",
+        "pay",
+        "payment#0"
+      ],
+      "stack_out": [
+        "payment#0",
+        "gtxn_type%0#0",
+        "pay"
+      ]
+    },
+    "251": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_type_matches%0#0",
+        "payment#0"
+      ],
+      "stack_out": [
+        "payment#0",
+        "gtxn_type_matches%0#0"
+      ]
+    },
+    "252": {
+      "error": "transaction type is pay",
+      "op": "assert // transaction type is pay",
+      "stack_out": [
+        "payment#0"
+      ]
+    },
+    "253": {
+      "op": "gtxns Amount",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "255": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "256": {
+      "error": "Amount must be greater than 0",
+      "op": "assert // Amount must be greater than 0",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "257": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "258": {
+      "op": "bytec_0 // \"total_transactions\"",
+      "defined_out": [
+        "\"total_transactions\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"total_transactions\""
+      ]
+    },
+    "259": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "260": {
+      "error": "check self.total_transactions exists",
+      "op": "assert // check self.total_transactions exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "261": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "262": {
+      "op": "+",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%2#1"
+      ]
+    },
+    "263": {
+      "op": "bytec_0 // \"total_transactions\"",
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%2#1",
+        "\"total_transactions\""
+      ]
+    },
+    "264": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%0#0",
+        "\"total_transactions\"",
+        "tmp%2#1"
+      ]
+    },
+    "265": {
+      "op": "app_global_put",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "266": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "267": {
+      "op": "bytec_1 // \"total_volume\"",
+      "defined_out": [
+        "\"total_volume\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"total_volume\""
+      ]
+    },
+    "268": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "269": {
+      "error": "check self.total_volume exists",
+      "op": "assert // check self.total_volume exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "270": {
+      "op": "+",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "271": {
+      "op": "bytec_1 // \"total_volume\"",
+      "stack_out": [
+        "tmp%4#0",
+        "\"total_volume\""
+      ]
+    },
+    "272": {
+      "op": "swap",
+      "stack_out": [
+        "\"total_volume\"",
+        "tmp%4#0"
+      ]
+    },
+    "273": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "274": {
+      "op": "pushbytes 0x151f7c7500205472616e73616374696f6e206c6f67676564207375636365737366756c6c792e",
+      "defined_out": [
+        "0x151f7c7500205472616e73616374696f6e206c6f67676564207375636365737366756c6c792e"
+      ],
+      "stack_out": [
+        "0x151f7c7500205472616e73616374696f6e206c6f67676564207375636365737366756c6c792e"
+      ]
+    },
+    "314": {
+      "op": "log",
+      "stack_out": []
+    },
+    "315": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "316": {
+      "op": "return",
+      "stack_out": []
+    }
+  }
+}
