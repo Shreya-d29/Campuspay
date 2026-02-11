@@ -166,6 +166,7 @@ npm run dev
 
 ## 📁 Project Folder Structure
 
+```text
 CampusPay-main/
 │
 ├── .agent/
