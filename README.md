@@ -149,20 +149,23 @@ CampusPay reimagines this experience using **Algorand’s fast, low-cost blockch
 
 ## 🚀 Quick Start
 
-```bash
+# Clone the repository
 git clone https://github.com/Shreya-d29/Campuspay.git
+
+# Navigate to project folder
 cd campuspay
 
+# Bootstrap and build backend
 algokit project bootstrap all
 algokit project run build
 
+# Run frontend
 cd projects/frontend
 npm install
 npm run dev
 
 ## 📁 Project Folder Structure
 
-```text
 CampusPay-main/
 │
 ├── .agent/
@@ -203,10 +206,7 @@ CampusPay-main/
 ├── deploy_err2.txt
 │
 ├── .gitignore
-└── README.md
-
-
----
+└── README.md 
 
 ## 🧩 Folder Description
 
