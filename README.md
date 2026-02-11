@@ -208,8 +208,7 @@ CampusPay-main/
 │
 ├── .gitignore
 └── README.md 
-
-when paste in readme it give as it is 
+ 
 ## 🧩 Folder Description
 
 - **campuspay/**  
