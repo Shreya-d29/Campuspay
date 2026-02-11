@@ -255,48 +255,66 @@ VITE_INDEXER_TOKEN=
 VITE_PINATA_JWT=YOUR_PINATA_JWT
 VITE_PINATA_GATEWAY=https://gateway.pinata.cloud/ipfs
 
-## ⛓️ Smart Contract Overview
+⛓️ Smart Contract Overview
+1️⃣ Expense Split Contract
 
-### 1️⃣ Expense Split Contract
-- Stores group members and total amount  
-- Calculates per-person share  
-- Releases funds only after all members pay  
+Stores group members and total amount
 
-### 2️⃣ Fundraising Escrow Contract
-- Locks funds until goal is reached  
-- Allows withdrawal only to campaign owner  
-- Auto-refunds contributors if deadline passes  
+Calculates per-person share
 
-### 3️⃣ Event Ticket ASA
-- Non-divisible NFTs (decimals = 0)  
-- Wallet-based ownership verification  
-- Prevents duplicate or fake tickets  
+Releases funds only after all members pay
 
----
+2️⃣ Fundraising Escrow Contract
 
-## 🧭 User Journeys
+Locks funds until goal is reached
 
-### Split a Group Expense
-1. Create expense group  
-2. Deploy smart contract  
-3. Share QR with members  
-4. Auto-settlement on completion  
+Allows withdrawal only to campaign owner
 
-### Fundraise for Campus Event
-1. Launch campaign with goal & deadline  
-2. Students contribute transparently  
-3. Smart contract releases or refunds funds  
+Auto-refunds contributors if deadline passes
 
-### Buy & Verify Event Ticket
-1. Purchase NFT ticket  
-2. Ticket stored in wallet  
-3. On-chain verification at entry  
+3️⃣ Event Ticket ASA
 
----
+Non-divisible NFTs (decimals = 0)
 
-## 🔐 Security Model
-- Non-custodial wallets (users own keys)  
-- Open-source smart contracts  
-- Immutable on-chain records  
-- No admin control over user funds  
-- Optional multi-sig for large campaigns
+Wallet-based ownership verification
+
+Prevents duplicate or fake tickets
+
+🧭 User Journeys
+Split a Group Expense
+
+Create expense group
+
+Deploy smart contract
+
+Share QR with members
+
+Auto-settlement on completion
+
+Fundraise for Campus Event
+
+Launch campaign with goal & deadline
+
+Students contribute transparently
+
+Smart contract releases or refunds funds
+
+Buy & Verify Event Ticket
+
+Purchase NFT ticket
+
+Ticket stored in wallet
+
+On-chain verification at entry
+
+🔐 Security Model
+
+Non-custodial wallets (users own keys)
+
+Open-source smart contracts
+
+Immutable on-chain records
+
+No admin control over user funds
+
+Optional multi-sig for large campaigns
