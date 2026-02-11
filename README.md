@@ -209,6 +209,7 @@ CampusPay-main/
 ├── .gitignore
 └── README.md 
 
+when paste in readme it give as it is 
 ## 🧩 Folder Description
 
 - **campuspay/**  
@@ -255,66 +256,48 @@ VITE_INDEXER_TOKEN=
 VITE_PINATA_JWT=YOUR_PINATA_JWT
 VITE_PINATA_GATEWAY=https://gateway.pinata.cloud/ipfs
 
-⛓️ Smart Contract Overview
-1️⃣ Expense Split Contract
+## ⛓️ Smart Contract Overview
 
-Stores group members and total amount
+### 1️⃣ Expense Split Contract
+- Stores group members and total amount  
+- Calculates per-person share  
+- Releases funds only after all members pay  
 
-Calculates per-person share
+### 2️⃣ Fundraising Escrow Contract
+- Locks funds until goal is reached  
+- Allows withdrawal only to campaign owner  
+- Auto-refunds contributors if deadline passes  
 
-Releases funds only after all members pay
+### 3️⃣ Event Ticket ASA
+- Non-divisible NFTs (decimals = 0)  
+- Wallet-based ownership verification  
+- Prevents duplicate or fake tickets  
 
-2️⃣ Fundraising Escrow Contract
+---
 
-Locks funds until goal is reached
+## 🧭 User Journeys
 
-Allows withdrawal only to campaign owner
+### Split a Group Expense
+1. Create expense group  
+2. Deploy smart contract  
+3. Share QR with members  
+4. Auto-settlement on completion  
 
-Auto-refunds contributors if deadline passes
+### Fundraise for Campus Event
+1. Launch campaign with goal & deadline  
+2. Students contribute transparently  
+3. Smart contract releases or refunds funds  
 
-3️⃣ Event Ticket ASA
+### Buy & Verify Event Ticket
+1. Purchase NFT ticket  
+2. Ticket stored in wallet  
+3. On-chain verification at entry  
 
-Non-divisible NFTs (decimals = 0)
+---
 
-Wallet-based ownership verification
-
-Prevents duplicate or fake tickets
-
-🧭 User Journeys
-Split a Group Expense
-
-Create expense group
-
-Deploy smart contract
-
-Share QR with members
-
-Auto-settlement on completion
-
-Fundraise for Campus Event
-
-Launch campaign with goal & deadline
-
-Students contribute transparently
-
-Smart contract releases or refunds funds
-
-Buy & Verify Event Ticket
-
-Purchase NFT ticket
-
-Ticket stored in wallet
-
-On-chain verification at entry
-
-🔐 Security Model
-
-Non-custodial wallets (users own keys)
-
-Open-source smart contracts
-
-Immutable on-chain records
-
-No admin control over user funds
-
-Optional multi-sig for large campaigns
+## 🔐 Security Model
+- Non-custodial wallets (users own keys)  
+- Open-source smart contracts  
+- Immutable on-chain records  
+- No admin control over user funds  
+- Optional multi-sig for large campaigns
